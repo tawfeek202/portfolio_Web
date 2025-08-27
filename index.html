@@ -26,12 +26,16 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-content">
+      <img src="ahmed-photo.jpg" alt="Ahmed Tawfik" class="hero-photo" />
       <h1 class="hero-name">Ahmed Tawfik AbdAllah Hsaneen</h1>
       <h2 class="hero-title">Digital IC Design Engineer</h2>
       <p class="hero-subtitle">RTL • ASIC Flow • Verification • FPGA</p>
-      <a href="Ahmed_Tawfik_Portfolio.pdf" target="_blank" class="btn">Download CV</a>
+      <div class="hero-actions">
+        <a href="Ahmed_Tawfik_Portfolio.pdf" target="_blank" class="btn">Download CV</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
     </div>
   </section>
 
@@ -41,15 +45,15 @@
     <div class="why-grid">
       <div class="why-card">
         <h3>⚡ Strong Technical Background</h3>
-        <p>Hands-on expertise in RTL, FPGA, Verification, and ASIC flow. Completed multiple professional diplomas and projects.</p>
+        <p>Hands-on expertise in RTL design, FPGA development, verification (SystemVerilog/UVM), and ASIC flow from RTL to GDSII.</p>
       </div>
       <div class="why-card">
         <h3>🚀 Problem Solver</h3>
-        <p>I design efficient digital systems and enjoy solving challenges by combining academic and practical experience.</p>
+        <p>I break complex problems into simple, testable hardware modules with clean, reusable RTL and verification components.</p>
       </div>
       <div class="why-card">
         <h3>🎯 Growth-Oriented</h3>
-        <p>Committed to continuous learning and contributing to innovative semiconductor and IC design projects.</p>
+        <p>Actively pursuing advanced diplomas and projects to keep sharpening my craft and ship real value on silicon.</p>
       </div>
     </div>
   </section>
@@ -58,10 +62,9 @@
   <section id="about">
     <h2>About Me</h2>
     <p class="about-text">
-      I’m a motivated Electronics and Communication Engineering student at Helwan University, passionate about Digital IC design.  
-      I combine **academic knowledge** with **hands-on projects** like UART, FIFO, ALU, and RISC-V cores.  
-      <br><br>
-      My long-term goal is to specialize in ASIC/FPGA design and contribute to industry-leading semiconductor innovations.
+      Ambitious Electronics and Communication Engineering student at Helwan University, focused on Digital IC Design.
+      I blend academic foundations with hands-on projects—UART, FIFO, ALU, I2C, and a basic RISC-V core—plus ASIC flow exposure from synthesis and STA to floorplanning, P&R, and sign-off.
+      I’m motivated by building reliable, testable designs that scale.
     </p>
   </section>
 
@@ -71,19 +74,19 @@
     <div class="services-grid">
       <div class="service-card">
         <h3>💻 RTL Design</h3>
-        <p>Efficient Verilog/SystemVerilog RTL coding with reusable, scalable designs.</p>
+        <p>Efficient Verilog/SystemVerilog RTL with hierarchy, parameterization, and lint-friendly code.</p>
       </div>
       <div class="service-card">
         <h3>🔍 Verification</h3>
-        <p>SystemVerilog/UVM-based verification environments for digital systems.</p>
+        <p>SystemVerilog/UVM environments, random/constrained tests, coverage-driven verification.</p>
       </div>
       <div class="service-card">
         <h3>🔧 FPGA Development</h3>
-        <p>FPGA implementation and testing of digital systems using Quartus/ISE.</p>
+        <p>Bring-up and prototyping on FPGA (Quartus/ISE), with timing closure and board-level validation.</p>
       </div>
       <div class="service-card">
         <h3>⚙️ ASIC Flow</h3>
-        <p>From RTL to GDSII: synthesis, STA, floorplanning, placement, and sign-off.</p>
+        <p>RTL to GDSII overview: synthesis, STA, floorplanning, placement, routing, ECOs, and sign-off.</p>
       </div>
     </div>
   </section>
@@ -91,20 +94,20 @@
   <!-- Education -->
   <section id="education">
     <h2>Education</h2>
-    <p class="about-text">
-      🎓 Electronics & Communication Engineering Student — Helwan University  
-      <br> Expected Graduation: 2026
-    </p>
+    <div class="edu-block">
+      <h3>Helwan University — Electronics & Communication Engineering</h3>
+      <p>Student • Expected Graduation: 2026 • Giza, Egypt</p>
+    </div>
   </section>
 
   <!-- Courses -->
   <section id="courses">
     <h2>Training & Courses</h2>
     <ul class="course-list">
-      <li>📘 Digital Design using FPGA — NTI (In progress)</li>
-      <li>📘 FPGA & SoC System Development — Eng. Yousef Sherif (In progress)</li>
-      <li>📘 RTL Verification Diploma (SystemVerilog & UVM) — Eng. Sherif Hosny (In progress)</li>
-      <li>📘 ASIC Digital IC Design Diploma — Eng. Ali El-Temsah (2024)</li>
+      <li><strong>Digital Design using FPGA</strong> — NTI (Aug 2025–In progress)</li>
+      <li><strong>FPGA & SoC System Development</strong> — Eng. Yousef Sherif (Aug 2025–In progress)</li>
+      <li><strong>RTL Verification Diploma (SystemVerilog & UVM)</strong> — Eng. Sherif Hosny (Jan 2025–In progress)</li>
+      <li><strong>ASIC Digital IC Design Diploma</strong> — Eng. Ali El-Temsah (Feb–Aug 2024)</li>
     </ul>
   </section>
 
@@ -112,12 +115,12 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project-grid">
-      <div class="project"><h3>UART TX/RX</h3><p>Hierarchical design with verification testbench.</p></div>
-      <div class="project"><h3>FIFO</h3><p>Synchronous FIFO design and verification.</p></div>
-      <div class="project"><h3>16-bit ALU</h3><p>Signed & unsigned hierarchical ALU design.</p></div>
-      <div class="project"><h3>I2C Protocol</h3><p>Implemented I2C master with one slave.</p></div>
-      <div class="project"><h3>RISC-V Core</h3><p>Basic RISC-V core design and execution pipeline.</p></div>
-      <div class="project"><h3>PCIe Graduation Project</h3><p>PCIe-over-UCIe adapter, RTL-to-GDS implementation.</p></div>
+      <div class="project"><h3>UART TX/RX</h3><p>Hierarchical transmitter/receiver with self-checking testbench.</p></div>
+      <div class="project"><h3>FIFO</h3><p>Synchronous FIFO design (depth/width parametric) and verification.</p></div>
+      <div class="project"><h3>16-bit ALU</h3><p>Signed/unsigned operations, coverage-driven verification.</p></div>
+      <div class="project"><h3>I2C Protocol</h3><p>I2C master with one slave; protocol timing and verification focus.</p></div>
+      <div class="project"><h3>RISC-V Core</h3><p>Basic core bring-up and instruction execution.</p></div>
+      <div class="project"><h3>RTL→GDS System</h3><p>Low-power configurable multi-clock system; synthesis, STA, P&R.</p></div>
     </div>
   </section>
 
@@ -153,15 +156,4 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:ahmedtawfek2002@gmail.com">ahmedtawfek2002@gmail.com</a></p>
-    <p>Phone: <a href="tel:+201098960940">+20 1098960940</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-tawfik-539945228/" target="_blank">linkedin.com/in/ahmed-tawfik</a></p>
-    <p>GitHub: <a href="https://github.com/tawfeek202" target="_blank">github.com/tawfeek202</a></p>
-    <p>YouTube: <a href="https://www.youtube.com/@ahmed.tawfik22" target="_blank">youtube.com/@ahmed.tawfik22</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Ahmed Tawfik | Portfolio</p>
-  </footer>
-</body>
-</html>
+    <p>Phone: <a href="tel:+201098960940">+20 10
